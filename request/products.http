@@ -1,0 +1,32 @@
+@api = http://localhost:3000/products
+### GET ALL PRODUCTS
+GET {{api}}
+
+### CREATE/ADD/POST A NEW PRODUCT
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "motherboard2",
+    "description": "Brand 2"
+}
+
+### GET A SINGLE PRODUCT (BY ID)
+GET {{api}}/1
+
+### DELETE A SINGLE PRODUCT
+DELETE {{api}}/2
+
+### GET ALL PRODUCTS LENGTH
+GET {{api}}/count
+
+### UPDATE A SINGLE PRODUCT
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "name": "pc Intel Updated!",
+    "description": "Intel i9 9900K Updated",
+    "quantity": 8
+}
+
